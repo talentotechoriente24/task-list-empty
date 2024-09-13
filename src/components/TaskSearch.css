@@ -1,0 +1,18 @@
+.task-search {
+    margin-bottom: 20px;
+  }
+  
+  .task-search input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .task-search input:focus {
+    border-color: #007bff;
+  }
+  

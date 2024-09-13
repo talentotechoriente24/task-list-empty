@@ -1,0 +1,71 @@
+.task-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+    margin-bottom: 15px;
+  }
+  
+  .task-item.completed {
+    background-color: #e0f7fa;
+    border-left: 5px solid #00796b;
+  }
+  
+  .task-item.completed span {
+    text-decoration: none;
+    color: #004d40;
+  }
+  
+  .task-item span {
+    cursor: pointer;
+    display: block;
+    font-size: 1.2rem;
+  }
+  
+  .task-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  
+  .task-info small {
+    color: #666;
+    margin-top: 5px;
+  }
+  
+  .icons {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+  }
+  
+  .check-btn, .edit-btn, .delete-btn {
+    background: transparent;
+    color: #007bff;
+    padding: 6px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .check-btn:hover {
+    background-color: #e0f7fa;
+    color: #007bff;
+  }
+  
+  .edit-btn:hover {
+    background-color: #e0f7fa;
+    color: #007bff;
+  }
+  
+  .delete-btn:hover {
+    background-color: #ffebee;
+    color: #d32f2f;
+  }
+  
