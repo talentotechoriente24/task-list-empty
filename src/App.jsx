@@ -3,6 +3,7 @@ import Header from './components/Header'
 import TaskForm from './components/TaskForm'
 import TaskList from './components/TaskList';
 import TaskSearch from './components/TaskSearch';
+import TaskFilters from './components/TaskFilters';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
     <>
       <Header/>
       <TaskSearch/>
+      <TaskFilters/>
       <TaskForm/>
       <TaskList tasks={tasks}/>
     </>
