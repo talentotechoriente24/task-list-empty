@@ -2,6 +2,7 @@ import './TaskItem.css'
 import { FiCheck, FiTrash2, FiEdit } from 'react-icons/fi';
 
 function TaskItem({task}) {
+  console.log('task: ', task)
 
   const toggleTaskComplete= ()=>{
 
@@ -12,7 +13,15 @@ function TaskItem({task}) {
   const removeTask= ()=>{
 
   }
-  
+  /**
+   * {
+    "create": "2024-09-14T16:46:23.683Z",
+    "name": "jvvjv",
+    "category": "Trabajo",
+    "limitDate": "2024-09-10",
+    "complete": "No"
+}
+   */
   return (
     <>
       <div className='task-info'>

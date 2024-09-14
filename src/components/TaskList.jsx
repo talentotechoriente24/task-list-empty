@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import TaskItem from './TaskItem';
 import './TaskList.css'
 function TaskList({tasks}) {
@@ -6,8 +7,8 @@ function TaskList({tasks}) {
     <ul className='task-list'>
       {tasks.map((task,index)=>(
         <TaskItem
-        key={index}
-        task={task}
+          key={index}
+          task={task}
         />
       ))
 

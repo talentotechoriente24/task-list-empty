@@ -4,21 +4,22 @@ import TaskForm from './components/TaskForm'
 import TaskList from './components/TaskList';
 import TaskSearch from './components/TaskSearch';
 import TaskFilters from './components/TaskFilters';
+import { useState } from 'react';
 
 
 function App() {
-  const tasks=[
-    {create: '13/09/2024', name:'Clase de Programación intermedio', complete:'Si', limitDate:'19/09/2024', category:'Trabajo'},
-    {create: '17/09/2024', name:'Clase de Simulación', complete:'NO', limitDate:'15/09/2024', category:'Trabajo'},
-    {create: '17/09/2024', name:'Clase de Simulación', complete:'NO', limitDate:'15/09/2024', category:'Trabajo'}
-  ]
+  const [tasks, setNewTasks] = useState([]);
+
+  const addTask = (task) => {
+    setNewTasks([...tasks, task])
+  }
 
   return (
     <>
       <Header/>
       <TaskSearch/>
       <TaskFilters/>
-      <TaskForm/>
+      <TaskForm addTask={addTask}/>
       <TaskList tasks={tasks}/>
     </>
   );

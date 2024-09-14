@@ -1,12 +1,12 @@
 import './TaskFilters.css';
 
 const TaskFilters = () => {
-  const handleOnchange = (e) => {
-    console.log('Seleccionastes: ', e.target.value)
+  const handleOnchange = (value) => {
+    console.log('Seleccionastes: ', value)
   }
   return (
     <div className="task-filters">
-      <select onChange={(e) => handleOnchange(e)}>
+      <select onChange={(e) => handleOnchange(e.target.value)}>
         <option value="">Todas las Categorías</option>
         <option value="Trabajo">Trabajo</option>
         <option value="Personal">Personal</option>
