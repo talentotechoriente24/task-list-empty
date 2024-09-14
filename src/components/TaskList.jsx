@@ -1,8 +1,18 @@
+import TaskItem from './TaskItem';
+import './TaskList.css'
+function TaskList({tasks}) {
 
-function TaskList() {
   return (
-    <>
-    </>
+    <ul className='task-list'>
+      {tasks.map((task,index)=>(
+        <TaskItem
+        key={index}
+        task={task}
+        />
+      ))
+
+      }
+    </ul>
   );
 }
 
