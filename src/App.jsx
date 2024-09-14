@@ -2,6 +2,7 @@ import './index.css';
 import Header from './components/Header'
 import TaskForm from './components/TaskForm'
 import TaskList from './components/TaskList';
+import TaskSearch from './components/TaskSearch';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
   return (
     <>
       <Header/>
+      <TaskSearch/>
       <TaskForm/>
       <TaskList tasks={tasks}/>
     </>
