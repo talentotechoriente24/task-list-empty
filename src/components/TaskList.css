@@ -1,23 +1,38 @@
-.task-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .task-list .task-item {
-    margin-bottom: 15px;
-    opacity: 0;
-    animation: fadeInUp 0.5s ease forwards;
-  }
-  
-  @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(10px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
+/* Estilo para el formulario de edición */
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.edit-form input,
+.edit-form select {
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+}
+
+.edit-buttons {
+  display: flex;
+  gap: 5px;
+  justify-content: flex-end;
+}
+
+.edit-save-btn,
+.edit-cancel-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.edit-save-btn:hover {
+  color: green;
+}
+
+.edit-cancel-btn:hover {
+  color: red;
+}
