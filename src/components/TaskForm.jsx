@@ -8,19 +8,16 @@ function TaskForm({addTask}) {
 
   const handleSubmit = (e)=>{
     e.preventDefault()
-    console.log('Agregando tarea')
-    console.log('Tarea: ', newTask);
-    console.log('Categoria: ', category);
-    console.log('Fecha: ', date);
-    //  {create: '13/09/2024', name:'Clase de Programación intermedio', complete:'Si', limitDate:'19/09/2024', category:'Trabajo'},
     addTask({
       create: new Date().toISOString(),
       name: newTask,
       category: category,
       limitDate: date,
       complete: 'No'
-    })
-    console.log('Tarea Agregada')
+    });
+    setCategory('');
+    setNewTask('');
+    setDate('');
   }
 
   return (

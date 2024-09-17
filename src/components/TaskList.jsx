@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import TaskItem from './TaskItem';
 import './TaskList.css'
-function TaskList({tasks}) {
+function TaskList({tasks, toggleTaskCompletion, removeTask, editTask}) {
 
   return (
     <ul className='task-list'>
@@ -9,6 +9,10 @@ function TaskList({tasks}) {
         <TaskItem
           key={index}
           task={task}
+          index={index}
+          toggleTaskCompletion={toggleTaskCompletion}
+          removeTask={removeTask}
+          editTask={editTask}
         />
       ))
 
